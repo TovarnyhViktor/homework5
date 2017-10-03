@@ -23,13 +23,28 @@ public class CarDoor {
         String c="closed";
         if(a.equals(o)){
             doorstatus = "closed";
-        }
-        else{
+        } else{
          doorstatus = "opened";
-        }
+        }}
+
+        public void openwindow(String b){
+        this.doorstatus = b;
     }
+    public void closewindow(String b){
+            this.doorstatus = b;
+    }
+public void ifitwillworkwithwindow(String b){
+        String o="opened";
+        String c="closed";
+        if(b.equals(o)){
+            doorstatus="closed";
+        }else {
+            doorstatus = "opened";
+        }
+}
+
     public void show(){
-        System.out.println(doorstatus);
-        System.out.println(windowstatus);
+        System.out.println("Статус дверей "+doorstatus);
+        System.out.println("Статус окон "+windowstatus+"\n");
     }
 }
