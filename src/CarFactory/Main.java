@@ -9,7 +9,7 @@ public class Main {
         mycardoor2.ifitwillwork("opened");
         mycardoor2.openwindow();
         mycardoor2.closewindow();
-                mycardoor2.ifitwillworkwithwindow("opened");
+        mycardoor2.ifitwillworkwithwindow("opened");
         mycardoor2.show();
 
         CarWheel mycarwheel = new CarWheel();
@@ -24,7 +24,7 @@ public class Main {
         mycarengine2.pluspass();
         mycarengine2.goaway(0);
         mycarengine2.indexdoor(2);
-        mycarengine2.indexwheel(3);
+        mycarengine2.indexwheel(3,s);
         mycarengine2.deletewheels();
         mycarengine2.newwheels(4);
         mycarengine2.maxspeednew(s);

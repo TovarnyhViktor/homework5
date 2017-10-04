@@ -8,8 +8,10 @@ public class CarEngine {
     int passagires;
     int passagiresnow;
     double speednow;
-    int Wheels = 4;
-    int doors = 4;
+    int four=4;
+    double[] Wheels = new double[four];
+    String[] doors = new String[four];
+    int q;
     double t;
     public CarEngine(){
         String data = this.data;
@@ -29,26 +31,32 @@ public class CarEngine {
             passagiresnow=passagiresnow+1;
     }
     public void goaway(int g){
-        this.passagiresnow=g;
+        passagiresnow=0;
     }
     public void indexdoor (int d){
-
+        this.q=d;
+        for (int i = 0; i < 4; i++){
+            doors[i] = "Closed";
+            if(i==d) {System.out.println("Дверь " + i +"-"+ doors[i]);}
+        }
     }
-    public void indexwheel (int u){
-
+    public void indexwheel (int p,double s){
+        double y=s;
+        for (int i = 0; i < 4; i++){
+            Wheels[i] = s;
+            if(i==p) {System.out.println("Колесо " + i +"-"+ Wheels[i]);}
+        }
     }
     public void deletewheels (){
-        this.Wheels=0;
+       four=0;
     }
-public void newwheels(int k){
-    int b = this.Wheels;
-    int c = k+b;
-    this.Wheels=c;
+    public void newwheels(int k){
+        four=four+k;
 }
 public void maxspeednew(double s){
     double t=s;
     if(this.passagiresnow==0){
-        this.newspeed = 0;
+        newspeed = 0;
     }else{
         newspeed=newspeed*t;
     }
@@ -61,8 +69,6 @@ public void show(){
     System.out.println("Время до макс.скорости "+timetomax);
     System.out.println("Мест дял пасажиров "+passagires);
     System.out.println("Сейчас в машине "+passagiresnow);
-    System.out.println("Скорость в данный момент"+speednow);
-    System.out.println("Колес "+Wheels);
-    System.out.println("Дверей "+doors);
+    System.out.println("Скорость в данный момент "+newspeed);
 }
 }

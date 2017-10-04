@@ -19,14 +19,15 @@ public class CarDoor {
     public void closedoor(){
         this.doorstatus = "closed";
     }
-    public void ifitwillwork(String a){
+    public String ifitwillwork(String a){
         String o="opened";
 
         if(a.equals(o)){
             doorstatus = "closed";
         } else{
          doorstatus = "opened";
-        }}
+        }
+    return doorstatus;}
 
         public void openwindow(){
             this.doorstatus = "opened";
