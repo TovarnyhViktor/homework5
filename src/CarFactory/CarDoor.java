@@ -3,6 +3,7 @@ package CarFactory;
 public class CarDoor {
     public String doorstatus;
     public String windowstatus;
+    public String o="opened";
 
     public CarDoor() {
         doorstatus = "Closed";
@@ -12,30 +13,28 @@ public class CarDoor {
         this.doorstatus = a;
         this.windowstatus = b;
     }
-    public void opendoor(String a){
-        this.doorstatus = a;
+    public void opendoor(){
+        this.doorstatus = "opened";
     }
-    public void closedoor(String a){
-        this.doorstatus = a;
+    public void closedoor(){
+        this.doorstatus = "closed";
     }
     public void ifitwillwork(String a){
         String o="opened";
-        String c="closed";
+
         if(a.equals(o)){
             doorstatus = "closed";
         } else{
          doorstatus = "opened";
         }}
 
-        public void openwindow(String b){
-        this.doorstatus = b;
+        public void openwindow(){
+            this.doorstatus = "opened";
     }
-    public void closewindow(String b){
-            this.doorstatus = b;
+    public void closewindow(){
+        this.doorstatus = "closed";
     }
 public void ifitwillworkwithwindow(String b){
-        String o="opened";
-        String c="closed";
         if(b.equals(o)){
             doorstatus="closed";
         }else {

@@ -11,11 +11,11 @@ public class CarWheel {
     public void swapwheel(double a) {
         this.wheel=a;
     }
-public  void brakewheel (double a){
+public double brakewheel (double a){
         double b = 1;
         double c = b-a;
         this.wheel=c;
-        return;
+    return b;
 }
     public void show(){
         System.out.println("Статус шины "+wheel+"\n");
